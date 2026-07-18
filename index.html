@@ -3,159 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>آیا ما وارد عصر نوشیدن آگاهانه شدیم؟ تأثیر ترندهای جهانی بر بازار نوشیدنی ایران</title>
+    <meta name="description" content="بررسی تأثیر تغییر رفتار مصرف‌کننده و ترند نوشیدن آگاهانه بر بازار نوشیدنی ایران">
+    <title>تأثیر نوشیدن آگاهانه بر بازار نوشیدنی ایران</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <style>
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.2; /* Slightly increased line-height for better readability with justify */
             margin: 0;
-            padding: 20px;
-            background-color: #f8f8f8;
-            color: #333;
+            padding: 24px;
+            background: #f4f6f8;
+            color: #1f2937;
+            font-family: "Vazirmatn", Tahoma, Arial, sans-serif;
+            line-height: 2;
             direction: rtl;
-            text-align: right; /* Default text align for RTL */
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-        }
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 1.5em; /* Decreased font size for H1 */
-        }
-        h2 {
-            color: #34495e;
-            font-size: 1.5em;
-            margin-top: 25px;
-            margin-bottom: 15px;
-        }
-        p {
-            margin-bottom: 15px;
-            text-align: justify; /* Justify text */
-        }
-        strong {
-            color: #e67e22; /* A subtle accent color for emphasis */
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin-bottom: 20px;
-        }
-        ul li {
-            background-color: #ecf0f1; /* Light gray for list items */
-            margin-bottom: 10px;
-            padding: 12px 15px;
-            border-radius: 5px;
-            border-right: 4px solid #3498db; /* Blue accent for list items */
-            text-align: justify; /* Justify text */
+            text-align: right;
         }
         a {
-            color: #3498db;
+            color: #2563eb;
             text-decoration: none;
+            transition: color 0.2s ease;
         }
         a:hover {
+            color: #1d4ed8;
             text-decoration: underline;
         }
-        .section-intro {
-            background-color: #e9f5ff; /* Light blue for intro section */
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 25px;
+        .container {
+            width: min(100%, 820px);
+            margin: 20px auto;
+            padding: 42px;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 18px;
+            box-shadow: 0 14px 35px rgba(15, 23, 42, 0.07);
         }
-        .section-main-story {
-            background-color: #f0fdf4; /* Light green for main story section */
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 25px;
+        .article-header {
+            margin-bottom: 32px;
+            text-align: center;
         }
-        .section-branding-tips {
-            background-color: #fffbe6; /* Light yellow for branding tips */
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 25px;
+        h1, h2 {
+            margin-top: 0;
+            color: #111827;
         }
-        .section-summary {
-            background-color: #f8e9ff; /* Light purple for summary */
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 25px;
+        h1 {
+            margin-bottom: 14px;
+            font-size: clamp(1.7rem, 4vw, 2.35rem);
+            line-height: 1.65;
+            font-weight: 800;
         }
-        .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            font-size: 0.9em;
-            color: #7f8c8d;
-            /* Ensure footer itself allows its child to center */
-            display: flex; /* Use flexbox for centering content */
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically if multiple lines */
+        h2 {
+            margin-bottom: 16px;
+            font-size: clamp(1.25rem, 3vw, 1.55rem);
+            line-height: 1.8;
+            font-weight: 700;
         }
-        .footer p {
-            margin: 0; /* Remove default margin from paragraph inside footer */
-            /* text-align: center; No longer needed here due to flexbox on parent */
+        .subtitle {
+            margin: 0;
+            color: #6b7280;
+            font-size: 1rem;
+            line-height: 1.9;
         }
-        hr {
-            border: 0;
-            height: 1px;
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
-            margin: 40px 0;
+        p {
+            margin: 0 0 16px;
+            text-align: right;
+        }
+        strong {
+            color: #111827;
+            font-weight: 700;
+        }
+        .highlight { color: #b45309; }
+        .article-section {
+            margin-bottom: 24px;
+            padding: 26px;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 14px;
+        }
+        .intro {
+            background: #f8fbff;
+            border-right: 4px solid #3b82f6;
+        }
+        .summary {
+            background: #fafafa;
+            border-right: 4px solid #8b5cf6;
+        }
+        .simple-list, .card-list { margin: 0; }
+        .simple-list {
+            padding-right: 24px;
+            list-style: disc;
+        }
+        .simple-list li {
+            margin-bottom: 8px;
+            padding-right: 4px;
+        }
+        .card-list {
+            padding: 0;
+            list-style: none;
+        }
+        .card-list li {
+            margin-bottom: 14px;
+            padding: 18px 20px;
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-right: 4px solid #3b82f6;
+            border-radius: 10px;
+            text-align: right;
+        }
+        .card-list li:last-child, .simple-list li:last-child { margin-bottom: 0; }
+        .card-list strong {
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+        .article-footer {
+            margin-top: 36px;
+            padding-top: 24px;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+            font-size: 0.92rem;
+            text-align: center;
+        }
+        .article-footer p {
+            margin: 0;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 0;
+                background: #ffffff;
+            }
+            .container {
+                margin: 0;
+                padding: 24px 18px;
+                border: 0;
+                border-radius: 0;
+                box-shadow: none;
+            }
+            .article-section { padding: 20px 18px; }
+            h1 { font-size: 1.75rem; }
+            h2 { font-size: 1.3rem; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>مصرف داروهای لاغری در آمریکا منجر به کاهش مصرف نوشیدنی‌های الکلی شده، خوب به ما چه ربطی داره؟</h1>
+    <main class="container">
+        <article>
+            <header class="article-header">
+                <h1>تأثیر داروهای لاغری بر مصرف نوشیدنی و درس‌های آن برای بازار ایران</h1>
+                <p class="subtitle">مصرف کمتر، انتخاب دقیق‌تر؛ آیا ما هم وارد عصر نوشیدن آگاهانه شده‌ایم؟</p>
+            </header>
 
-        <div class="section-intro">
-            <p>اخیراً مقاله‌ای خوندم در سایت <a href="https://www.beveragedaily.com/Article/2025/06/18/what-do-weight-loss-drugs-mean-for-alcohol-brands/" target="_blank">Beverage Daily</a> که بررسی کرده بود چطور داروهای لاغری مثل <a href="https://www.digikala.com/mag/ozempic-for-weight-loss/" target="_blank">Ozempic</a> باعث کاهش میل به مصرف نوشیدنی‌های الکلی در آمریکا شده و برندهای بزرگ الکل دارن استراتژی‌هاشون رو تغییر میدن.</p>
-            <p>در نگاه اول شاید به نظر برسه که این موضوع اصلاً به ما توی ایران ربطی نداره — نه داروهای GLP-1 این‌جا رایجه و نه مصرف رسمی نوشیدنی‌های الکلی — اما اگه دقیق‌تر نگاه کنیم، متوجه می‌شیم که اصل داستان خیلی به ما هم مربوطه:</p>
-        </div>
+            <section class="article-section intro">
+                <p>
+                    اخیراً مقاله‌ای در سایت
+                    <a href="https://www.beveragedaily.com/Article/2025/06/18/what-do-weight-loss-drugs-mean-for-alcohol-brands/" target="_blank" rel="noopener noreferrer">Beverage Daily</a>
+                    خواندم که بررسی کرده بود چگونه داروهای لاغری مانند
+                    <a href="https://www.digikala.com/mag/ozempic-for-weight-loss/" target="_blank" rel="noopener noreferrer">Ozempic</a>
+                    باعث کاهش میل به مصرف نوشیدنی‌های الکلی در آمریکا شده‌اند و برندهای بزرگ این صنعت در حال تغییر استراتژی‌های خود هستند.
+                </p>
+                <p>
+                    در نگاه اول شاید به نظر برسد که این موضوع ارتباطی با بازار ایران ندارد؛ نه داروهای GLP-1 در اینجا به همان اندازه رایج‌اند و نه مصرف رسمی نوشیدنی‌های الکلی وجود دارد. اما با کمی دقت متوجه می‌شویم که اصل ماجرا برای بازار ایران هم اهمیت دارد.
+                </p>
+            </section>
 
-        <div class="section-main-story">
-            <h2>اصل ماجرا: تغییر رفتار مصرف‌کننده</h2>
-            <p>چه به‌خاطر داروهای لاغری باشه و چه رژیم غذایی و چه دغدغه‌های سلامتی یا اقتصادی، یه روند جهانی شروع شده:
-            <br><strong>«مصرف کمتر، انتخاب دقیق‌تر»</strong></p>
+            <section class="article-section">
+                <h2>اصل ماجرا: تغییر رفتار مصرف‌کننده</h2>
+                <p>
+                    چه به‌دلیل داروهای لاغری، رژیم غذایی، دغدغه‌های سلامتی یا شرایط اقتصادی، یک روند جهانی در حال شکل‌گیری است:
+                    <strong class="highlight">«مصرف کمتر، انتخاب دقیق‌تر»</strong>
+                </p>
+                <p>مردم کمتر به سراغ نوشیدنی‌های سنگین و ناسالم می‌روند و در عوض گزینه‌هایی را ترجیح می‌دهند که:</p>
+                <ul class="simple-list">
+                    <li>سبک باشند.</li>
+                    <li>قند و کالری کمتری داشته باشند.</li>
+                    <li>از ترکیبات طبیعی یا گیاهی بهره ببرند.</li>
+                    <li>پس از مصرف، احساس ناخوشایند یا عذاب وجدان ایجاد نکنند.</li>
+                </ul>
+            </section>
 
-            <p>مردم کمتر سراغ نوشیدنی‌های سنگین و ناسالم میرن؛ در عوض دنبال گزینه‌هایی هستن که:</p>
-            <ul>
-                <li>سبک باشه</li>
-                <li>قند و کالری پایین‌تری داشته باشه</li>
-                <li>ترکیبات طبیعی یا گیاهی داشته باشه</li>
-                <li>احساس گناه بعد از مصرف ایجاد نکنه!</li>
-            </ul>
-        </div>
+            <section class="article-section">
+                <h2>۵ نکته مهم برای برندهای نوشیدنی در ایران</h2>
+                <ul class="card-list">
+                    <li><strong>بازتعریف مفهوم نوشیدنی سالم</strong><br>نوشیدنی سالم فقط آب‌میوه طبیعی نیست. شاید زمان آن رسیده باشد که برندها به محصولاتی مانند infused water، نوشیدنی‌های کم‌قند یا محصولات تخمیری سبک مانند کامبوچا فکر کنند.</li>
+                    <li><strong>نوآوری در طعم و تجربه مصرف</strong><br>وقتی الکل در محصول وجود ندارد، تجربه مصرف باید از طریق طعم‌های تازه، گاز طبیعی، رنگ و بسته‌بندی خلاقانه تقویت شود.</li>
+                    <li><strong>بسته‌بندی و پیام سلامت‌محور</strong><br>مصرف‌کنندگان به نوشته‌های روی برچسب محصول توجه می‌کنند. شفافیت درباره ترکیبات، کالری و مزایای محصول می‌تواند اعتماد ایجاد کند.</li>
+                    <li><strong>تمرکز بر مصرف خانگی و روزمره</strong><br>نوشیدنی فقط برای مهمانی نیست. یک برند موفق باید در سبد مصرف روزانه خانواده جای بگیرد، نه فقط در مناسبت‌های خاص.</li>
+                    <li><strong>استفاده از فضای دیجیتال برای فرهنگ‌سازی</strong><br>هنگامی که بازار در حال گذار است، آموزش و ارتباط با مصرف‌کننده از طریق اینستاگرام، لینکدین یا تیک‌تاک می‌تواند مزیت رقابتی ایجاد کند.</li>
+                </ul>
+            </section>
 
-        <div class="section-branding-tips">
-            <p>برندهای نوشیدنی (حتی توی ایران) باید به این ۵ نکته توجه کنن:</p>
-            <ul>
-                <li><strong>بازتعریف «نوشیدنی سالم»</strong><br>نه فقط آب‌میوه طبیعی. شاید وقتشه به سراغ نوشیدنی‌هایی مثل infused water، نوشیدنی‌های کم‌قند یا محصولات تخمیری سبک مثل کامبوچا فکر کنیم.</li>
-                <li><strong>نوآوری در طعم و تجربه مصرف</strong><br>وقتی الکل نباشه، باید تجربه‌ی مصرف از طریق طعم‌های جدید، گاز طبیعی، رنگ و حتی بسته‌بندی خلاقانه تقویت بشه.</li>
-                <li><strong>بسته‌بندی و پیام سلامت‌محور</strong><br>مردم به نوشته‌های روی لیبل دقت می‌کنن. شفاف بودن در مورد ترکیبات، کالری و مزایای سلامتی، اعتماد ایجاد می‌کنه.</li>
-                <li><strong>تمرکز بر مصرف خانگی و روزمره</strong><br>نوشیدنی فقط برای مهمونی نیست. یک برند موفق باید توی سبد روزانه خانوار جا بگیره، نه فقط مناسبت‌های خاص.</li>
-                <li><strong>استفاده از فضای دیجیتال برای فرهنگ‌سازی</strong><br>وقتی بازار توی گذاره، آموزش و ارتباط با مصرف‌کننده از طریق اینستاگرام، لینکدین یا حتی تیک‌تاک می‌تونه تفاوت ایجاد کنه.</li>
-            </ul>
-        </div>
+            <section class="article-section summary">
+                <h2>جمع‌بندی</h2>
+                <p>حتی اگر در ایران دسترسی رسمی به نوشیدنی‌های الکلی یا برخی داروهای خاص وجود نداشته باشد، الگوهای جهانی رفتار مصرف‌کننده در نهایت بر بازار ما هم اثر می‌گذارند.</p>
+                <p>برندهایی که زودتر این روندها را بشناسند و خود را با آن‌ها تطبیق دهند، در بازار داخلی و صادرات منطقه‌ای شانس موفقیت بیشتری خواهند داشت.</p>
+                <p><strong class="highlight">آیا ما هم وارد عصر نوشیدن آگاهانه شده‌ایم؟</strong></p>
+            </section>
 
-        <hr>
-
-        <div class="section-summary">
-            <h2>جمع‌بندی:</h2>
-            <p>حتی اگر ما در ایران دسترسی به نوشیدنی‌های الکلی یا داروهای خاص نداشته باشیم، الگوهای جهانی رفتار مصرف‌کننده بالاخره به بازار ما هم سرایت می‌کنن.
-             برندهایی که زودتر این روندها رو بفهمن و خودشون رو باهاش وفق بدن، هم در بازار داخلی و هم در صادرات منطقه‌ای موفق‌تر خواهند بود.</p>
-
-            <p><strong>آیا ما هم وارد عصر نوشیدن آگاهانه شدیم؟</strong></p>
-        </div>
-
-        <div class="footer">
-            <p>ارتباط با من: <a href="https://linktr.ee/hamed.shabanzadeh" target="_blank">hamed.shabanzadeh</a></p>
-        </div>
-    </div>
+            <footer class="article-footer">
+                <p>
+                    این مقاله توسط
+                    <a href="https://linktr.ee/hamed.shabanzadeh" target="_blank" rel="noopener noreferrer">حامد شعبان‌زاده</a>
+                    تهیه شده است.
+                </p>
+            </footer>
+        </article>
+    </main>
 </body>
 </html>
