@@ -10,7 +10,7 @@
 
 شما می‌توانید نسخه آنلاین این مقاله را در لینک زیر مشاهده کنید:
 
-*(https://hamedshabanzadeh.github.io/aware-drinking/)*
+*https://hamedshabanzadeh.github.io/aware-drinking/*
 
 ## موضوعات کلیدی مطرح شده
 
